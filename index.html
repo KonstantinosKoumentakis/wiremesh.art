@@ -12,9 +12,9 @@
     <!-- Navigation bar -->
     <nav id="navbar">
         <!-- Brand -->
-        <div class="brand">
-            <h3>Wire Mesh Art</h3>
-            <p>by Konstantinos Koumentakis</p>
+        <div>
+            <p class="brand-name">Wire Mesh Art</p>
+            <p class="brand-artist">by Konstantinos Koumentakis</p>
         </div>
         <!-- Menu -->
         <div class="menu-items">
@@ -25,16 +25,18 @@
         </div>
         <!-- Sandwich menu -->
         <div class="toggle-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <img src="images/icons/sandwich_menu.png" alt="menu" style="width: 30px; height: auto;">
         </div>
         <!-- Button to minimise sandwich menu -->
-        <div class="close-menu">x</div>
+        <div class="close-menu">
+            <img src="images/icons/x.png" alt="x" style="width: 30px; height: auto";>
+        </div>
     </nav>
     <!-- Content -->
     <main>
-        <img src="images/work/aphrodite/detail_1.png" alt="Aphrodite" style="max-width: 100%; height: auto;">
+        <!-- Full image on big screens, cropped on small -->
+        <img src="images/work/aphrodite/detail_1.png" alt="Aphrodite" class="home-image">
+        <img src="images/work/aphrodite/detail_1_cropped.png" alt="Aphrodite" class="home-image-cropped">
     </main>
     <!-- Interactivity -->
     <script src="appearance/utils.js"></script>

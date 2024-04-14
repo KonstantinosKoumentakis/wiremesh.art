@@ -12,9 +12,9 @@
     <!-- Navigation bar -->
     <nav id="navbar">
         <!-- Brand -->
-        <div class="brand">
-            <h3>Wire Mesh Art</h3>
-            <p>by Konstantinos Koumentakis</p>
+        <div>
+            <p class="brand-name">Wire Mesh Art</p>
+            <p class="brand-artist">by Konstantinos Koumentakis</p>
         </div>
         <!-- Menu -->
         <div class="menu-items">
@@ -25,21 +25,32 @@
         </div>
         <!-- Sandwich menu -->
         <div class="toggle-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <img src="images/icons/sandwich_menu.png" alt="menu" style="width: 30px; height: auto;">
         </div>
         <!-- Button to minimise sandwich menu -->
-        <div class="close-menu">x</div>
+        <div class="close-menu">
+            <img src="images/icons/x.png" alt="x" style="width: 30px; height: auto";>
+        </div>
     </nav>
     <!-- Content -->
     <main>
+        <!-- Image grid on big screens, stack on small -->
         <div class="image-grid">
             <img src="images/work/aphrodite/far.png" alt="Aphrodite">
             <img src="images/work/aphrodite/detail_1.png" alt="Aphrodite">
             <img src="images/work/aphrodite/close.png" alt="Aphrodite">
             <img src="images/work/aphrodite/detail_2.png" alt="Aphrodite">
-            <!-- put dimensions here -->
+        </div>
+        <img src="images/work/aphrodite/far.png" alt="Aphrodite" class="image-stack">
+        <img src="images/work/aphrodite/close.png" alt="Aphrodite" class="image-stack">
+        <img src="images/work/aphrodite/detail_1.png" alt="Aphrodite" class="image-stack">
+        <img src="images/work/aphrodite/detail_2.png" alt="Aphrodite" class="image-stack">
+        <!-- Aphrodite details -->
+        <div class="artwork-details">
+            <p>Title: Aphrodite</p>
+            <p>Medium: Stainless steel wire mesh</p>
+            <p>Dimensions: 94 x 124 cm (37 x 49 inches)</p>
+            <p>Year: 2024</p>
         </div>
     </main>
     <!-- Interactivity -->
