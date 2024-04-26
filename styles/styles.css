@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 200;
+    font-size: 16px;
 }
 
 /* Navigation bar */
@@ -101,24 +102,34 @@ nav .menu-items a {
 }
 
 /* Contact details */
-.contact-box {
+.contact-form {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
     text-align: left;
 }
-.contact-text {
-    font-size: 19px;
-    margin-bottom: 25px;
+
+input {
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    font-weight: 300;
 }
-.contact-channel {
-    margin-bottom: 10px;
-    font-size: 19px;
+
+textarea {
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    font-weight: 300;
 }
-.icon {
-    margin-right: 10px;
-    vertical-align: middle;
+
+button[type="submit"] {
+    font-size: 16px;
+    font-weight: 300;
 }
 
 /* Hide sandwich menu and x buttons */
@@ -200,12 +211,16 @@ nav .menu-items a {
         margin-bottom: 30px;
     }
     
-    /* Decrease contact gap */
-    .contact-box {
-        margin-top: 50px;
-        margin-left: 50px;
-        margin-right: 50px;
-        width: fit-content;
+    /* Contact details */
+    input {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    button[type="submit"] {
+        width: 300px;
     }
 }
-
